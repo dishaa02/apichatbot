@@ -46,7 +46,7 @@ class PromptInput(BaseModel):
 
 class ChainRequest(BaseModel):
     prompt: str
-    models: list[str]
+    models: List[str]
 
 # ✅ Health check endpoint
 @app.get("/health")
